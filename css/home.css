@@ -9,10 +9,14 @@
     --playfair-font: 'Playfair Display', serif;
     --titillium-font: 'Titillium Web', sans-serif;
 }
+body{
+    margin: 0;
+}
+
 .container{
-    margin: 0 auto;
+    margin: 0;
     min-width: 360px;
-    width: 95vw;
+    width: 100%;
 }
 /*HEADER SECTION*/
 header{
@@ -69,6 +73,12 @@ header{
     color: white;
 }
 
+.person-name{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight:900;
+}
+
 /*END OF HEADER SECTION*/
 
 /*MAIN SECTION*/
@@ -102,8 +112,9 @@ main{
 }
 
 .scene{
-    perspective: 600px;
-    height: 300px;
+    perspective: 2000px;
+    height: 100%;
+    width: 100%;
 }
 
 .scene:hover{
@@ -153,6 +164,53 @@ main{
 
 .card a:hover{
     color: #C2EABD;
+}
+
+/* The device with borders */
+.device {
+    position: relative;
+    width: calc(360px - 40px);
+    height: 570px;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    margin: 1em auto;
+}
+
+/* The horizontal line on the top of the device */
+.device:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.device:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.device .content {
+    width: 290px;
+    height: 450px;
+    background: white;
 }
 /*END OF MAIN SECTION*/
 
@@ -225,3 +283,23 @@ footer button:hover{
     color: white;
 }
 /*END OF FOOTER*/
+
+/*MEDIA QUERIES*/
+
+/*Small devices (landscape phones)*/
+@media screen and (min-width:576px) {
+}
+
+/*Medium devices (tablets)*/
+@media screen and (min-width:768px) {
+}
+
+/*Large devices (desktops)*/
+@media screen and (min-width:992px) {
+
+}
+
+
+/*Extra large devices (large desktops)*/
+@media screen and (min-width:1200px) {
+}
