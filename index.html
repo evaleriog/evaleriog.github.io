@@ -1,18 +1,12 @@
-<!doctype html5>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Online Portfolio / Resume - Eduardo Valerio Gamez</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Your custom styles go here -->
-
     <!--link for css file -->
     <link rel="stylesheet" href="css/index.css">
-    <!--Link for Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
     <!--Setting up Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--For using font awesome-->
@@ -22,112 +16,47 @@
 <body>
 <!--HEADER-->
 <header>
-    <div class="container-fluid">
+    <nav>
+        <a href="#" class="display_menu medium_break"><i class="fas fa-1x fa-bars"></i></a>
+        <ul class="top_menu">
+            <li><a href="#" class="display_menu"><i class="fas fa-1x fa-bars"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </nav>
 
-        <div class="jumbotron jumbotron-fluid p-0">
-            <div class="background d-flex flex-column">
-                <nav>
-                    <div id="circularMenu" class="circular-menu">
-
-                        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
-                            <i class="fas fa-bars"></i>
-                        </a>
-
-                        <menu class="items-wrapper">
-                            <a href="https://github.com/evaleriog" target="_blank" class="menu-item fab fa-github-square"></a>
-                            <a href="https://www.linkedin.com/in/eduardovalerio/" target="_blank" class="menu-item fab fa-linkedin"></a>
-                            <a href="#projects" class="menu-item fab fas fa-code-branch"></a>
-                            <a href="#about" class="menu-item far fa-address-card"></a>
-                        </menu>
-                        
-                    </div>
-                </nav>
-                
-                <div class="personal-intro roboto">
-                    <h1 class="display-4">Hello, my name is</h1>
-                    <h1 class="display-4"><span class="name font-weight-bolder">Eduardo Valerio Gamez</span></h1>
-                    <p class="lead">I am a Web Developer currently seeking for a job opportunity to show my skills
-                        in HTML, CSS, and Javascript</p>
-                    <hr class="my-4">
-                    <p>Please navigate in my Website/Portfolio to get to know me and my work.</p>
-                    <p>If you are interested in hiring me. Please do not hesitate in contacting me.</p>
-                    <p>
-                        <button class="intro-btn" type="button">Contact Me</button>
-                        <button class="intro-btn" type="button">View my Resume</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-
+    <div class="dropdown show">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-portrait"></i> About Me</a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="fab fa-github-square"></i> Github</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
     </div>
+
 </header>
 <!-- End of HEADER -->
 
 <!--MAIN-->
 <main>
-
-    <div class="container-fluid">
-        <article class="about" id="about">
-
-            <section class="my-picture">
-                <img src="" alt="myself">
-            </section>
-
-            <section class="about-info roboto">
-                <h2 class="playfair">About Me</h2>
-                <p>lknflsnklcsklcnklsenclksenc
-                    cnelcnlkncklrncklrncr
-                    crlkncrenclrkncklrecnr</p>
-            </section>
-
-        </article>
-
-        <article  class="projects" id="projects">
-            <h2 class="playfair">My Projects</h2>
-
-            <div class="scene">
-                <div class="card">
-                    <div class="card-face card-front">
-                        <img src="img/codeup-project-design.png">
-                    </div>
-                    <div class="card-face card-back roboto">
-                        <h6 class="playfair">Codeup Design Project</h6>
-                        <p>This was a pair programming project in which my teammate and myself would have to create
-                            a website from wireframes provided to us. The website is responsive for extra-small, small, medium, large and extra-large
-                            screens.</p>
-                        <p>This was a fun project to work with, and my first pair programmin project ever. It was interesting how
-                            to combine two different programming aproaches to work toguether and achieve the result.</p>
-                        <p><a href="https://github.com/Nico-Eduardo-Deimos/codeup-design-project" target="_blank"><i class="fab fa-2x fa-github-square"></i></a></p>
-                    </div>
-                </div>
-            </div>
-
-        </article>
-    </div>
-
+    <div class="container"></div>
 </main>
 <!-- End of MAIN -->
 
 <!--FOOTER-->
 <footer>
-
-    <div class="container-fluid">
-        <ul class="nav roboto py-4">
-            <li class="nav-item mr-auto ml-4">Designed by Eduardo Valerio Gamez</li>
-            <li class="nav-item mr-4"><a href="https://www.linkedin.com/in/eduardovalerio/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a></li>
-            <li class="nav-item mr-4"><a href="https://github.com/evaleriog" target="_blank"><i class="fab fa-2x fa-github-square"></i></a></li>
-        </ul>
-    </div>
-
+    <ul class="footer">
+        <li>Designed by Eduardo Valerio Gamez</li>
+        <li><a href="https://www.linkedin.com/in/eduardovalerio/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/evaleriog" target="_blank"><i class="fab fa-2x fa-github-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-2x fa-instagram"></i></a></li>
+    </ul>
 </footer>
 <!-- End of FOOTER -->
 
 <!-- Main page content -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<!-- Your custom JS goes here -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
