@@ -10,7 +10,7 @@
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
 }
@@ -48,7 +48,6 @@ nav{
 .dropdown{
     background-color: #011936;
     color: white;
-    width: 50vw;
     position: absolute;
 }
 
@@ -70,6 +69,7 @@ nav{
 }
 
 .dropdown ul li a{
+    background-color: #011936;
     color: white;
     text-decoration: none;
 }
@@ -90,11 +90,22 @@ nav{
 
 /*MAIN*/
     .container{
-        width: 100%;
         height: calc(100vh - 3em);
-        background-color: yellow;
         margin: 0;
-        padding: 0;
+        padding: 2em;
+        background-image: url("../img/landscape.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .about_me{
+        height: 100vh;
+        background-color: #465362;
     }
 /*MAIN*/
 
