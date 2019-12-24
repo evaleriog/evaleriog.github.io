@@ -5,26 +5,27 @@
     --cyan-color:#C2EABD;
     --blue-color: #011936;
     --gray-color: #465362;
+
+    box-sizing: border-box;
 }
 
 body{
+    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 /*HEADER*/
-.medium_break{
-    display: none;
-    background-color: #011936;
-    color: white;
-    padding: 1em;
+nav{
+    width: 100vw;
 }
 
 .top_menu{
     background-color: #011936;
     color: white;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     padding: 1em;
     margin: 0;
@@ -34,6 +35,16 @@ body{
     display: block;
     text-decoration: none;
 }
+
+.medium_screen{
+    display: none;
+    position: absolute;
+}
+
+.medium_screen #exit_medium{
+    margin-bottom: 5em;
+}
+
 .dropdown{
     background-color: #011936;
     color: white;
@@ -41,7 +52,7 @@ body{
     position: absolute;
 }
 
-.dropdown ul{
+.dropdown ul, .medium_screen ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -50,9 +61,25 @@ body{
     padding: 0;
 }
 
-.dropdown ul li{
-    padding: 1.5em;
+.dropdown ul li, .medium_screen ul li{
+    padding: 1em;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown ul li a:hover{
+    color: #C2EABD;
+}
+
+.medium_screen ul li{
+    background-color: darkred;
 }
 
 .show{
@@ -72,15 +99,32 @@ body{
 /*MAIN*/
 
 /*FOOTER*/
-    .footer{
+    footer{
+        display: flex;
         background-color: #011936;
         color: white;
+        justify-content: space-between;
+        padding: 1.5em;
+        font-size: 0.5em;
+    }
+
+    .footer{
+
         display: flex;
         list-style-type: none;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-        padding: 2em;
+        margin: 0;
     }
+
+    .footer li a{
+        margin-left: 0.8em;
+        color: white;
+    }
+
+.footer li a:hover{
+    color: #C2EABD;
+}
 /*FOOTER*/
 
 /*Breakpoint for Small devices (landscape phones)*/
@@ -91,24 +135,25 @@ body{
 /*Breakpoint for Medium devices (tablets)*/
 @media screen and (min-width: 768px){
    /*HEADER*/
-    nav ul.top_menu{
+    .medium_screen{
+        display: block;
+        top: 30vh;
+    }
+
+    .display_menu{
         display: none;
     }
 
-   .medium_break{
-       display: block;
-       position: fixed;
-   }
-
-    .dropdown{
-        width: 20vw;
-        height: 50vh;
-        position: fixed;
-        top: 25vh;
+    .top_menu{
+        height: 10vh;
     }
 
-    .show{
-        display: block;
+    .container{
+        height: calc(100vh - 10vh);
+    }
+
+    footer{
+        font-size: 1.5em;
     }
 }
 
