@@ -5,4 +5,8 @@
         $('.show').toggle();
     });
 
+    $('.project_image').click(function () {
+        $(this).fadeOut("slow");
+    })
+
 })(); //End of IIFE

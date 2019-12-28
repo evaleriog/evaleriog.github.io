@@ -106,6 +106,34 @@ nav{
     .about_me{
         height: 100vh;
         background-color: #465362;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_me img{
+        width: 30vw;
+        height: 30vh;
+        margin: 1em;
+        border: 1px solid white;
+        box-shadow: 10px 5px 5px black;
+        border-radius: 20px 0 20px 0;
+    }
+
+    .about_me article{
+        padding: 1em;
+    }
+
+    .projects{
+        height: 100vh;
+        background-color: #E9DC5C;
+    }
+
+    .project_image{
+        background-color: #011936;
+        height: 40vh;
+        width: 40vw;
     }
 /*MAIN*/
 
