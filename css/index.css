@@ -130,10 +130,26 @@ nav{
         background-color: #E9DC5C;
     }
 
+    .projects article{
+        position: relative;
+        margin-bottom: 0.5em;
+    }
+
     .project_image{
-        background-color: #011936;
+        background-color: #ED254E;
         height: 40vh;
         width: 40vw;
+    }
+
+    .project_image:hover{
+        cursor: pointer;
+    }
+
+    .project_info{
+        display: none;
+        position: absolute;
+        top:0;
+        left: 0;
     }
 /*MAIN*/
 
