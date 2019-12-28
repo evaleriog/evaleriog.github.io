@@ -6,7 +6,13 @@
     });
 
     $('.project_image').click(function () {
-        $(this).fadeOut("slow");
-    })
+        $(this).next('.project_info').show();
+        // $(this).hide();
+    });
+
+    $('.project_info').click(function () {
+        // $(this).before('.project_image').show();
+        $(this).hide();
+    });
 
 })(); //End of IIFE
