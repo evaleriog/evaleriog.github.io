@@ -5,6 +5,10 @@
         $('.show').toggle();
     });
 
+    $('.display_message').click(function () {
+        $('.message').show();
+    });
+
     $('.project_image').click(function () {
         $(this).next('.project_info').show();
         // $(this).hide();
