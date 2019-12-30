@@ -52,23 +52,23 @@
 <!--MAIN-->
 <main>
     <div class="message">
-        <form>
+        <form method="POST">
             <h3>Contact Me</h3>
             <p>
-                <label>Name: </label>
-                <input type="text">
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text">
             </p>
             <p>
-                <label>Email: </label>
-                <input type="email">
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email">
             </p>
 
-            <label>Message</label>
-            <textarea></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
 
             <p>
-                <button>Cancel</button>
-                <button>Submit</button>
+                <button id="cancel">Cancel</button>
+                <button id="submit">Submit</button>
             </p>
         </form>
     </div>
