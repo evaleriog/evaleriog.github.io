@@ -281,7 +281,13 @@ nav{
     }
 
     .projects h3{
-        flex-grow: 50;
+        flex-basis: 100%;
+    }
+
+    .project_info, .project_image{
+        width: 30vw;
+        height: 40vh;
+        margin-right: 15px;
     }
 }
 
