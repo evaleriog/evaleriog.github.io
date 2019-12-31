@@ -264,6 +264,25 @@ nav{
     footer{
         font-size: 1.5em;
     }
+
+    /*MAIN*/
+    .about_me{
+        flex-direction: row;
+    }
+
+    .about_me img{
+        height: 70vh;
+    }
+
+    .projects{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .projects h3{
+        flex-grow: 50;
+    }
 }
 
 /*Breakpoint for Large devices (desktops)*/
