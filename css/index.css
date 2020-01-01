@@ -13,9 +13,11 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3{
+    font-family: 'Yeseva One', cursive;
     margin: 0 0 1em 0;
 }
 
@@ -25,7 +27,7 @@ nav{
 }
 
 .top_menu{
-    background-color: #011936;
+    background-color: var(--blue-color);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -38,6 +40,11 @@ nav{
 .top_menu li a{
     display: block;
     text-decoration: none;
+    color: white;
+}
+
+.top_menu li a:hover{
+    color: var(--cyan-color);
 }
 
 .medium_screen{
@@ -75,33 +82,39 @@ nav{
 .dropdown ul li a{
     width: 100%;
     height: 100%;
-    background-color: #011936;
+    background-color: var(--blue-color);
     color: white;
     text-decoration: none;
     padding: 1.5em;
 }
 
 .dropdown ul li a:hover{
-    background-color: #465362;
+    background-color: var(--gray-color);
 }
 
 .dropdown ul li a:hover{
-    color: #C2EABD;
+    color: var(--cyan-color);
 }
 
 .medium_screen ul li{
-    background-color: darkred;
+    background-color: var(--red-color);
 }
 
 .medium_screen ul li a{
+    color: var(--blue-color);
     width: 100%;
     height: 100%;
     padding: 1em;
 }
 
 .medium_screen ul li a:hover{
-    background-color: #465362;
-    color: #011936;
+    background-color: var(--yellow-color);
+    color: var(--gray-color);
+}
+
+#my_name{
+    color: var(--cyan-color);
+    font-family: 'Permanent Marker', cursive;
 }
 
 .show{
@@ -127,7 +140,8 @@ nav{
     .message form{
         width: 100%;
         height: 100%;
-        background-color: #465362;
+        background-color: var(--gray-color);
+        color: white;
         padding: 1.5em;
         display: flex;
         flex-direction: column;
@@ -155,14 +169,14 @@ nav{
     .message form p button{
         align-self: stretch;
         flex-grow: 2;
-        background-color: #C2EABD;
+        background-color: var(--cyan-color);
         border: 1px solid black;
         padding: 1em;
         cursor: pointer;
     }
 
     .message form p button:hover{
-        background-color: orangered;
+        background-color: var(--red-color);
     }
 
     .container{
@@ -181,7 +195,7 @@ nav{
 
     .about_me{
         height: 100vh;
-        background-color: #465362;
+        background-color: var(--yellow-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -202,7 +216,7 @@ nav{
     }
 
     .projects{
-        background-color: #E9DC5C;
+        background-color: var(--gray-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -212,6 +226,7 @@ nav{
 
     .projects h3{
         align-self: flex-start;
+        color: white;
     }
 
     .projects article{
@@ -255,7 +270,7 @@ nav{
 /*FOOTER*/
     footer{
         display: flex;
-        background-color: #011936;
+        background-color: var(--blue-color);
         color: white;
         justify-content: space-between;
         padding: 1.5em;
@@ -277,7 +292,7 @@ nav{
     }
 
 .footer li a:hover{
-    color: #C2EABD;
+    color: var(--cyan-color);
 }
 /*FOOTER*/
 
