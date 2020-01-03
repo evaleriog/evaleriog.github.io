@@ -10,11 +10,11 @@
     });
 
     $('.project_image').click(function () {
-        $(this).next('.project_info').show();
+        $(this).next('.project_info').slideToggle(500);
     });
 
     $('.project_info').click(function () {
-        $(this).hide();
+        $(this).slideToggle(500);
     });
 
     $('#submit').click(function (e) {
