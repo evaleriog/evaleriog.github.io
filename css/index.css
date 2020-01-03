@@ -195,6 +195,20 @@ nav{
         color: white;
     }
 
+    .resume{
+        margin-top: 1em;
+        border: 1px solid black;
+        padding: 1em;
+        background-color: var(--red-color);
+        text-decoration: none;
+        color: var(--blue-color);
+        border-radius: 30px;
+    }
+
+    .resume:hover{
+        background-color: var(--gray-color);
+    }
+
     .about_me{
         height: 100vh;
         background-color: var(--yellow-color);
@@ -253,6 +267,14 @@ nav{
         top:0;
         left: 0;
         display: none;
+    }
+
+    .project_info a{
+        color: var(--blue-color);
+    }
+
+    .project_info a:hover{
+        color: var(--cyan-color);
     }
 
 .project_info, .project_image{
