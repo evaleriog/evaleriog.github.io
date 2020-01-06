@@ -1,127 +1,123 @@
 /*Variables for theme colors on the website*/
-:root{
-    --red-color: #ED254E;
-    --yellow-color: #E9DC5C;
-    --cyan-color:#C2EABD;
-    --blue-color: #011936;
-    --gray-color: #465362;
+    :root{
+        --red-color: #ED254E;
+        --yellow-color: #E9DC5C;
+        --cyan-color:#C2EABD;
+        --blue-color: #011936;
+        --gray-color: #465362;
 
-    box-sizing: border-box;
-}
+        box-sizing: border-box;
+    }
 
-body{
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-}
+    body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+    }
 
-h3{
-    font-family: 'Yeseva One', cursive;
-    margin: 0 0 1em 0;
-}
+    h3{
+        font-family: 'Yeseva One', cursive;
+        margin: 0 0 1em 0;
+    }
 
 /*HEADER*/
-nav{
-    width: 100vw;
-}
+    nav{
+        width: 100vw;
+    }
 
-.top_menu{
-    background-color: var(--blue-color);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 1em;
-    margin: 0;
-}
+    .top_menu{
+        background-color: var(--blue-color);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        padding: 1em;
+        margin: 0;
+    }
 
-.top_menu li a{
-    display: block;
-    text-decoration: none;
-    color: white;
-}
+    .top_menu li a{
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
 
-.top_menu li a:hover{
-    color: var(--cyan-color);
-}
+    .top_menu li a:hover{
+        color: var(--cyan-color);
+    }
 
-.medium_screen{
-    display: none;
-    position: absolute;
-}
+    .medium_screen{
+        display: none;
+        position: absolute;
+    }
 
-.medium_screen #exit_medium{
-    margin-bottom: 5em;
-}
+    .dropdown{
+        background-color: #011936;
+        color: white;
+        position: absolute;
+    }
 
-.dropdown{
-    background-color: #011936;
-    color: white;
-    position: absolute;
-}
+    .dropdown ul, .medium_screen ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+    }
 
-.dropdown ul, .medium_screen ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0;
-}
+    .dropdown ul li, .medium_screen ul li{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.dropdown ul li, .medium_screen ul li{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .dropdown ul li a{
+        width: 100%;
+        height: 100%;
+        background-color: var(--blue-color);
+        color: white;
+        text-decoration: none;
+        padding: 1.5em;
+    }
 
-.dropdown ul li a{
-    width: 100%;
-    height: 100%;
-    background-color: var(--blue-color);
-    color: white;
-    text-decoration: none;
-    padding: 1.5em;
-}
+    .dropdown ul li a:hover{
+        background-color: var(--gray-color);
+    }
 
-.dropdown ul li a:hover{
-    background-color: var(--gray-color);
-}
+    .dropdown ul li a:hover{
+        color: var(--cyan-color);
+    }
 
-.dropdown ul li a:hover{
-    color: var(--cyan-color);
-}
+    .medium_screen ul li{
+        background-color: var(--red-color);
+    }
 
-.medium_screen ul li{
-    background-color: var(--red-color);
-}
+    .medium_screen ul li a{
+        color: var(--blue-color);
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+    }
 
-.medium_screen ul li a{
-    color: var(--blue-color);
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-}
+    .medium_screen ul li a:hover{
+        background-color: var(--yellow-color);
+        color: var(--gray-color);
+    }
 
-.medium_screen ul li a:hover{
-    background-color: var(--yellow-color);
-    color: var(--gray-color);
-}
+    #my_name{
+        color: var(--cyan-color);
+        font-family: 'Permanent Marker', cursive;
+        margin-left: 10px;
+    }
 
-#my_name{
-    color: var(--cyan-color);
-    font-family: 'Permanent Marker', cursive;
-    margin-left: 10px;
-}
-
-.show{
-    display: none;
-}
+    .show{
+        display: none;
+    }
 
 /*HEADER*/
 
@@ -283,10 +279,10 @@ nav{
         color: var(--cyan-color);
     }
 
-.project_info, .project_image{
-    width: 60vw;
-    height: 40vh;
-}
+    .project_info, .project_image{
+        width: 60vw;
+        height: 40vh;
+    }
 
     .mobile_image{
         position: absolute;
@@ -337,9 +333,9 @@ nav{
         color: white;
     }
 
-.footer li a:hover{
-    color: var(--cyan-color);
-}
+    .footer li a:hover{
+        color: var(--cyan-color);
+    }
 /*FOOTER*/
 
 /*Breakpoint for Small devices (landscape phones)*/
