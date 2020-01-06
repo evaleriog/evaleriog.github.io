@@ -256,10 +256,13 @@ nav{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
     }
 
-    .project_image:hover{
+    .project_image:hover, .project_info:hover{
         cursor: pointer;
+        border: 1px solid white;
+        box-shadow: 10px 5px 5px black;
     }
 
     .project_info{
@@ -285,8 +288,12 @@ nav{
     height: 40vh;
 }
 
-    .project_info:hover{
-        cursor: pointer;
+    .mobile_image{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 20%;
+        height: 35%;
     }
 
     .care_package{
