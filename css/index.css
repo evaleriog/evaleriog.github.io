@@ -253,6 +253,9 @@ nav{
 
     .project_image{
         background-color: #ED254E;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .project_image:hover{
@@ -286,8 +289,20 @@ nav{
         cursor: pointer;
     }
 
-    .project_image, .project_info{
-        border-radius: 20px;
+    .care_package{
+        background-image: url("../img/care_package_desktop.png");
+    }
+
+    .movie_project{
+        background-image: url("../img/movie_project_desktop.png");
+    }
+
+    .codeup_design{
+        background-image: url("../img/codeup_design_project_desktop.png");
+    }
+
+    .coffee_project{
+        background-image: url("../img/coffee_project_desktop.png");
     }
 /*MAIN*/
 
