@@ -1,6 +1,10 @@
 "use strict";
 //Start of IIFE
 (function (){
+    //variables for carousel in section about me
+    var slideIndex = 0;
+    showSlides();
+
     $('.display_menu').click(function () {
         $('.show').toggle();
     });
@@ -60,5 +64,38 @@
 
         $('.message').hide();
     });
+
+    $('.resume').click(function (e) {
+        e.preventDefault();
+
+        $('.resume_view').show();
+    });
+
+    $('.close_resume').click(function (e) {
+        e.preventDefault();
+
+        $('.resume_view').hide();
+    });
+
+    // Section for ABOUT ME Carousel
+    function showSlides(){
+        let slides = document.getElementsByClassName("slider");
+
+        for(let i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if(slideIndex > slides.length){
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000);
+    }
+
+
+
 
 })(); //End of IIFE
