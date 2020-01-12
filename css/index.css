@@ -95,6 +95,7 @@
 
     .medium_screen ul li{
         background-color: var(--red-color);
+        z-index: 5;
     }
 
     .medium_screen ul li a{
@@ -122,7 +123,7 @@
 /*HEADER*/
 
 /*MAIN*/
-    .message{
+    .message, .resume_view{
         width: 70vw;
         height: 60vh;
         background-color: white;
@@ -133,6 +134,26 @@
         right: 0;
         margin: auto;
         display: none;
+    }
+
+    .resume_view{
+        width: 70vw;
+        height: 90vh;
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .resume_view button{
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .resume_view button:hover{
+        color: var(--yellow-color);
     }
 
     .message form{
@@ -211,6 +232,7 @@
         border-bottom: 10px solid var(--red-color);
         background-color: white;
         box-sizing: border-box;
+        padding-left: 3em;
     }
 
     .about_me img{
@@ -266,7 +288,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1em;
+        padding: 1em 1em 1em 4em;
     }
 
     .projects h3{
@@ -348,7 +370,7 @@
         background-color: var(--blue-color);
         color: white;
         justify-content: space-between;
-        padding: 1.5em;
+        padding: 1.5em 1.5em 1.5em 4em;
         font-size: 0.5em;
     }
 
@@ -390,7 +412,15 @@
    /*HEADER*/
     .medium_screen{
         display: block;
-        top: 30vh;
+        position: fixed;
+        top:0;
+        height: 100%;
+        background-color: var(--red-color);
+        opacity: 0.6;
+    }
+
+    .medium_screen ul{
+        margin-top: 30vh;
     }
 
     .display_menu{

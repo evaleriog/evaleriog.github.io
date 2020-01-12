@@ -65,6 +65,18 @@
         $('.message').hide();
     });
 
+    $('.resume').click(function (e) {
+        e.preventDefault();
+
+        $('.resume_view').show();
+    });
+
+    $('.close_resume').click(function (e) {
+        e.preventDefault();
+
+        $('.resume_view').hide();
+    });
+
     // Section for ABOUT ME Carousel
     function showSlides(){
         let slides = document.getElementsByClassName("slider");
