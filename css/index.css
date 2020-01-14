@@ -361,6 +361,10 @@
     .coffee_project{
         background-image: url("../img/coffee_project_desktop.png");
     }
+
+    .weather_application{
+        background-image: url("../img/weather_application_desktop.png");
+    }
 /*MAIN*/
 
 /*FOOTER*/
