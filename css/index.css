@@ -37,10 +37,10 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-color: white;
-        border-radius: 100%;
+        border-radius: 50%;
         border: 2px solid var(--cyan-color);
-        width: 10vw;
-        height: 10vh;
+        width: 100px;
+        height: 100px;
     }
 
     .top_menu{
@@ -306,7 +306,6 @@
 
     .skills{
         width: 100vw;
-        height: 100vh;
         background: white;
         display: flex;
         flex-direction: column;
@@ -322,10 +321,23 @@
 
     .language{
         border: 1px solid black;
-        border-radius: 100%;
+        border-radius: 50%;
+        background-image: url("../img/database-solid.svg");
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        background-position: center;
         background-color: var(--yellow-color);
-        padding: 2em;
         margin-bottom: 2em;
+        text-align: center;
+        line-height: 0;
+        width: 30%;
+        height: 0;
+        padding: 15% 0;
+        color: white;
+    }
+
+    .language:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .projects{
@@ -525,8 +537,21 @@
         width: 40vw;
     }
 
+    .skills{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
     .skills h3{
         margin-left: 4em;
+    }
+
+    .language{
+        width: 20%;
+        height: 0;
+        padding: 10% 0;
+        margin-right: 3em;
     }
 
     .projects{
