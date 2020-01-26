@@ -17,7 +17,7 @@
         font-size: 1.2em;
     }
 
-    h3{
+    h1, h3{
         font-family: 'Yeseva One', cursive;
         /*margin: 0 0 1em 0;*/
     }
@@ -36,8 +36,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 100px;
-        height: 100px;
+        width: 4em;
+        height: 4em;
     }
 
     .top_menu{
@@ -47,7 +47,7 @@
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        padding: 1em;
+        padding: 0.3em;
         margin: 0;
     }
 
@@ -116,6 +116,9 @@
         width: 100%;
         height: 100%;
         padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .medium_screen ul li a:hover{
@@ -124,10 +127,11 @@
     }
 
     #my_name{
-        color: var(--cyan-color);
+        color: #18FFFF;
         font-family: 'Permanent Marker', cursive;
         margin-left: 10px;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 6px 6px var(--blue-color);
+        font-size: 1.3em;
     }
 
     .show{
@@ -222,25 +226,36 @@
     .container{
         height: calc(100vh - 3em);
         margin: 0;
-        padding: 2em;
         background-image: url("../img/landscape.jpeg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
     }
 
+    .info{
+        width: 80%;
+        height: 40%;
+        padding: 0;!important;
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
     .resume{
         border: 1px solid black;
-        padding: 0.8em;
         background-color: var(--red-color);
         text-decoration: none;
         color: var(--blue-color);
         border-radius: 30px;
         box-shadow: inset 0 0 10px #000000;
+        padding: 0 0.5em;
+        color: white;
     }
 
     .resume:hover{
@@ -572,9 +587,9 @@
         margin-right: 15px;
     }
 
-    .info{
-        padding: 5em;
-    }
+    /*.info{*/
+    /*    padding: 5em;*/
+    /*}*/
 
     footer{
         padding-left: 4em;
