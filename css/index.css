@@ -247,20 +247,29 @@
         justify-content: space-between;
     }
 
-    .resume{
-        border: 1px solid black;
-        background-color: var(--red-color);
+    .info a{
         text-decoration: none;
-        color: var(--blue-color);
-        border-radius: 30px;
-        box-shadow: inset 0 0 10px #000000;
-        padding: 0 0.5em;
-        color: white;
+        color: var(--red-color);
     }
 
-    .resume:hover{
-        background-color: var(--gray-color);
+    .info a:hover{
+        color: var(--cyan-color);
     }
+
+    /*.resume{*/
+    /*    border: 1px solid black;*/
+    /*    background-color: var(--red-color);*/
+    /*    text-decoration: none;*/
+    /*    color: var(--blue-color);*/
+    /*    border-radius: 30px;*/
+    /*    box-shadow: inset 0 0 10px #000000;*/
+    /*    padding: 0 0.5em;*/
+    /*    color: white;*/
+    /*}*/
+
+    /*.resume:hover{*/
+    /*    background-color: var(--gray-color);*/
+    /*}*/
 
     .about_me{
         width: 100vw;
@@ -331,14 +340,40 @@
         margin-left: 1em;
     }
 
-    .language{
+    .skills_hover{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
         border: 1px solid black;
         border-radius: 50%;
-        background-image: url("../img/database-solid.svg");
-        background-size: 80% 80%;
+        box-sizing: border-box;
+        line-height: 120%;
+        font-size: 0.9em;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        overflow: scroll;
+        display: none;
+    }
+
+    .language:hover > .skills_hover{
+        display: inline-block;
+    }
+
+    .language{
+        position: relative;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-image: url("../img/java.png");
+        background-size: 90% 90%;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: var(--yellow-color);
         margin-bottom: 2em;
         text-align: center;
         line-height: 0;
@@ -352,6 +387,26 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+    .java{
+        background-image: url("../img/java.png");
+    }
+
+    .html{
+        background-image: url("../img/html.png");
+    }
+
+    .css{
+        background-image: url("../img/css.png");
+    }
+
+    .javascript{
+        background-image: url("../img/javascript.png");
+    }
+
+    .mysql{
+        background-image: url("../img/mysql.png");
+    }
+
     .projects{
         background-color: var(--gray-color);
         display: flex;
@@ -359,6 +414,23 @@
         justify-content: center;
         align-items: center;
         padding: 1em;
+    }
+
+    .project_hover_text{
+        box-sizing: border-box;
+        padding: 1em;
+        text-align: center;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: none;
+
+    }
+
+    .project_image:hover > .project_hover_text{
+        display: block;
     }
 
     .projects h3{
@@ -374,7 +446,7 @@
 
     .project_image{
         background-color: #ED254E;
-        background-size: cover;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
@@ -436,6 +508,10 @@
 
     .weather_application{
         background-image: url("../img/weather_application_desktop.png");
+    }
+
+    .adlister{
+        background-image: url("../img/adlister_desktop.png");
     }
 /*MAIN*/
 

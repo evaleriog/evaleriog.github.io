@@ -13,7 +13,7 @@
         $('.message').show();
     });
 
-    $('.project_image').click(function () {
+    $('.project_hover_text').click(function () {
         $(this).next('.project_info').slideToggle(500);
     });
 
@@ -77,6 +77,17 @@
         $('.resume_view').hide();
     });
 
+    $('.menu_links').click(function (e) {
+        if(this.hash !== ""){
+            e.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({scrollTop: $(hash).offset().top}, 900, function () {
+                window.location.hash = hash;
+            });
+        }//end if
+    });
     // Section for ABOUT ME Carousel
     function showSlides(){
         let slides = document.getElementsByClassName("slider");
