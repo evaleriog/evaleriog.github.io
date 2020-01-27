@@ -17,6 +17,10 @@
         $(this).next('.project_info').slideToggle(500);
     });
 
+    $('.project_image').click(function () {
+        $(this).next('.project_info').slideToggle(500);
+    });
+
     $('.project_info').click(function () {
         $(this).slideToggle(500);
     });
