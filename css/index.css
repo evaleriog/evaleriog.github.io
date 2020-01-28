@@ -229,9 +229,8 @@
     }
 
     .container{
-        height: calc(100vh - 3em);
         width: 100vw;
-        /*height: 100vh;*/
+        height: 100vh;
         margin: 0;
         background-image: url("../img/landscape.jpeg");
         background-position: center;
@@ -566,6 +565,9 @@
 
 /*Breakpoint for Medium devices (tablets)*/
 @media screen and (min-width: 768px){
+    body{
+        font-size: 1.2em;
+    }
    /*HEADER*/
     .display_logo{
         display: block;
@@ -603,10 +605,6 @@
         width: 80vw;
         height: 70vh;
         margin: auto;
-    }
-
-    .container{
-        height: calc(100vh - 10vh);
     }
 
     footer{
