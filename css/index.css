@@ -167,6 +167,7 @@
         right: 0;
         display: none;
         font-size: 0.8em;
+        z-index: 6;
     }
 
     .resume_view{
