@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Portfolio / Resume - Eduardo Valerio Gamez</title>
+    <!--Setting up Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--For using font awesome-->
+    <script src="https://kit.fontawesome.com/317175159f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto|Yeseva+One&display=swap" rel="stylesheet">
+    <!--link for css file -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<div id="home"></div>
+<!--HEADER-->
+<header>
+    <nav>
+        <ul class="top_menu">
+            <li class="display_logo"><div class="logo"></div></li>
+            <li class="display_menu"><a href="#"><i class="fas fa-1x fa-bars"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope display_message"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="dropdown show">
+        <ul>
+            <li><a href="#home" class="menu_links"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about_me" class="menu_links"><i class="fas fa-portrait"></i> About Me</a></li>
+            <li><a href="#projects" class="menu_links"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/eduardovalerio/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/evaleriog" target="_blank"><i class="fab fa-github-square"></i> Github</a></li>
+            <li><a href="https://www.instagram.com/eduardo.valerio.g/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+    </div>
+
+    <div class="medium_screen">
+        <!--        <a href="#" id="exit_medium">X</a>-->
+        <ul>
+            <li><a href="#home" class="menu_links"><i class="fas fa-home menu_links"></i></a></li>
+            <li><a href="#about_me" class="menu_links"><i class="fas fa-lg fa-portrait"></i></a></li>
+            <li><a href="#projects" class="menu_links"><i class="fas fa-project-diagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/eduardovalerio/" target="_blank"><i class="fab fa-lg fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/evaleriog" target="_blank"><i class="fab fa-lg fa-github-square"></i></a></li>
+            <li><a href="https://www.instagram.com/eduardo.valerio.g/" target="_blank"><i class="fab fa-lg fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+</header>
+<!-- End of HEADER -->
+
+<!--MAIN-->
+<main>
+    <div class="message">
+        <form method="POST">
+            <h3>Contact Me</h3>
+            <p>
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text">
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email">
+            </p>
+
+            <p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </p>
+
+            <p>
+                <button id="cancel">Cancel</button>
+                <button id="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+
+    <div class="resume_view">
+        <button class="close_resume"><i class="fas fa-times-circle"></i></button>
+        <iframe src="data/resume.pdf" frameborder="1" ></iframe>
+    </div>
+
+    <div class="container">
+        <div class="info">
+            <h1>Hello, my name is <span id="my_name">Eduardo Valerio Gamez</span></h1>
+            <p>I am a Software Developer who enjoys coffee, coding, and enjoying a view.
+                Please discover about me through my website.</p>
+            <p>Keep going to learn more <a href="#about_me" class="menu_links">about me</a> . Please contact me if interested. You can also view <a href="#" class="resume">my Resume</a></p>
+        </div>
+    </div>
+
+    <section class="about_me" id="about_me">
+
+        <article class="slider fade">
+            <div class="about_info">
+                <img src="img/eduardo_valerio_gamez.jpg" alt="Eduardo Valerio Gamez">
+                <div>
+                    <h3>About Me</h3>
+                    <p>I am a detail-oriented software developer with leadership skills, working with teams & coaching skills.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="slider fade">
+            <div class="about_info">
+                <img src="img/family.jpeg" alt="My Family">
+                <div>
+                    <h3>About Me</h3>
+                    <p>When I am not coding. I love to spend time with my family..</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="slider fade">
+            <div class="about_info">
+                <img src="img/runners.jpg" alt="Running">
+                <div>
+                    <h3>About Me</h3>
+                    <p>I also like to go for a run at the park. Which made me love technology as I transitioned
+                        from running with an CD Walkman to an Ipod</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="slider fade">
+            <div class="about_info">
+                <img src="img/popcorn-movie.jpg" alt="Movie Nights">
+                <div>
+                    <h3>About Me</h3>
+                    <p>I enjoy Movie Nights with friends and family. Specially movies with great special effects.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="slider fade">
+            <div class="about_info">
+                <img src="img/codeup.png" alt="Codeup">
+                <div>
+                    <h3>About Me</h3>
+                    <p>I enrolled in Codeup to learn about Web Development and created amazing projects that made
+                        me a better developer and fulfill my dream of working in technology</p>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="skills">
+        <h3>Skills</h3>
+        <div class="language java">
+            <div class="skills_hover">
+                <p>We used Java SE and Java EE in Codeup. I implemented Java EE is projects like a Tic-Tac-Toe console game and an Adventure console game. Java EE was used for the
+                    backend of our applications. This is seen in the Adlister application</p>
+            </div>
+        </div>
+        <div class="language html">
+            <div class="skills_hover">
+                <p>One of the first skills learned at Codeup. It is used in all my web applications</p>
+            </div>
+        </div>
+        <div class="language css">
+            <div class="skills_hover">
+                <p>This is another skill learned at Codeup. This is greatly used in the Codeup Design
+                    Project, as well as the Coffee Project. It is still use in the rest of application with some support of Bootstrap</p>
+            </div>
+        </div>
+        <div class="language javascript">
+            <div class="skills_hover">
+                <p>Javascript is used in the Weather Application, Care Package, Movie Project, and
+                    Adlister. I used to read and manipulate JSON files delivered by APIs with the use of Ajax requests. Also
+                    used for button click events and some animations.</p>
+            </div>
+        </div>
+        <div class="language mysql">
+            <div class="skills_hover">
+                <p>Database design and implementation with the use of MySql is seen on the Adlister.
+                    Which helps with the relationships between users and ads.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h3>My Projects</h3>
+
+        <article>
+            <div class="project_image codeup_design">
+                <div class="project_hover_text">
+                    <h1>Codeup Design Project</h1>
+                    <p>Please click for more information about the project</p>
+                </div>
+                <img src="img/codeup_design_project_mobile.png" alt="Codeup Design Project Mobile View" class="mobile_image">
+            </div>
+            <div class="project_info">
+                <h4>Codeup Project</h4>
+                <p>This was my first pair programming exercise. For this
+                    project we used HTML and CSS to recreate frameworks provided
+                    to us. The site is mobile responsive.</p>
+                <p><a href="https://github.com/Nico-Eduardo-Deimos/codeup-design-project" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="project_image coffee_project">
+                <div class="project_hover_text">
+                    <h1>Coffee Project</h1>
+                    <p>Please click for more information about the project</p>
+                </div>
+                <img src="img/coffee_project_mobile.png" alt="Coffee Project Mobile View" class="mobile_image">
+            </div>
+            <div class="project_info">
+                <h4>Coffee Project</h4>
+                <p>Pair programming exercise which we used Javascript, HTML,
+                    and CSS to create a site for users to select coffee based on the
+                    roast type and name.</p>
+                <p><a href="https://github.com/mayer-valerio-deimos/coffee-project" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="project_image care_package">
+                <div class="project_hover_text">
+                    <h1>Care Package</h1>
+                    <p>Please click for more information about the project</p>
+                </div>
+                <img src="img/care_package_mobile.png" alt="Care Package Mobile View" class="mobile_image">
+            </div>
+            <div class="project_info">
+                <h4>Care Package</h4>
+                <p>Solution on the Veteran's Codeathon for the White Challenge. We used HTML, CSS, Javascript, JSON Server to
+                    simulate a Database, and Mapbox API. Great experience using Agile Programming.</p>
+                <p><a href="https://github.com/wolfman-deimos/white-challenge" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="project_image movie_project">
+                <div class="project_hover_text">
+                    <h1>Movie Project</h1>
+                    <p>Please click for more information about the project</p>
+                </div>
+                <img src="img/movie_project_mobile.png" alt="Movie Project Mobile View" class="mobile_image">
+            </div>
+            <div class="project_info">
+                <h4>Movie Project</h4>
+                <p>Project that lets users add, edit and delete movies from a JSON server. Users can also search for movies
+                    based on the rating and title. We used HTML, CSS, Bootstrap, Javascript, npm , and JSON Server.</p>
+                <p><a href="https://github.com/Rutherford-Valerio-Deimos-Movies-App/movies-application" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="project_image weather_application">
+                <div class="project_hover_text">
+                    <h1>Weather Application</h1>
+                    <p>Please click for more information about the project</p>
+                </div>
+                <img src="img/weather_application_mobile.png" alt="Weather Application Mobile View" class="mobile_image">
+            </div>
+            <div class="project_info">
+                <h4>Weather Application</h4>
+                <p>Project which user gets the weather forecast for 3 - 7 days. Users can also search for a city's weather
+                    forecast by dragging the marker or using the search box. Combined both Dark Sky and Mapbox APIs to
+                    display the weather information. Used HTML, CSS, Bootstrap and JavaScript.
+                </p>
+                <p><a href="https://github.com/evaleriog/WeatherApplication" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="project_image adlister">
+                <div class="project_hover_text">
+                    <h1>Adlister Application</h1>
+                    <p>Please click for more information about the project</p>
+                </div>
+                <img src="img/adlister_mobile.png" alt="Adlister Mobile View" class="mobile_image">
+            </div>
+            <div class="project_info">
+                <h4>Adlister</h4>
+                <p>Full Stack Application in which a user can Add, Edit, and Delete ads (planets) as long the user is
+                    logged in the application. When an ad is clicked, it will display information about the particular ad.
+                    Users can also edit their own profile. We used Java EE and mySql for the back end, and HTML, CSS, and Javascript
+                    for the front end.
+                </p>
+                <p><a href="https://github.com/PlanetLister/planetlister" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></p>
+            </div>
+        </article>
+    </section>
+</main>
+<!-- End of MAIN -->
+
+<!--FOOTER-->
+<footer>
+    <p>Designed by Eduardo Valerio Gamez</p>
+    <ul class="footer">
+        <li><a href="https://www.linkedin.com/in/eduardovalerio/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+        <li><a href="https://github.com/evaleriog" target="_blank"><i class="fab fa-github-square fa-lg"></i></a></li>
+        <li><a href="https://www.instagram.com/eduardo.valerio.g/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+    </ul>
+</footer>
+<!-- End of FOOTER -->
+
+<!-- Main page content -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
