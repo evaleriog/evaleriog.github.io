@@ -21,9 +21,6 @@
     }
 
 /*HEADER*/
-/*    nav{*/
-/*        width: 100vw;*/
-/*    }*/
 
     .display_logo{
         display: none;
@@ -159,20 +156,11 @@
     .message, .resume_view{
         width: 100vw;
         height: 100vh;
-        background-color: white;
+        background-color: rgba(255,255,255,0.8);
         position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
         display: none;
         font-size: 0.8em;
         z-index: 6;
-    }
-
-    .resume_view{
-        /*width: 70vw;*/
-        /*height: 80vh;*/
         top:4em;
         left: 0;
     }
@@ -269,21 +257,6 @@
     .info a:hover{
         color: var(--cyan-color);
     }
-
-    /*.resume{*/
-    /*    border: 1px solid black;*/
-    /*    background-color: var(--red-color);*/
-    /*    text-decoration: none;*/
-    /*    color: var(--blue-color);*/
-    /*    border-radius: 30px;*/
-    /*    box-shadow: inset 0 0 10px #000000;*/
-    /*    padding: 0 0.5em;*/
-    /*    color: white;*/
-    /*}*/
-
-    /*.resume:hover{*/
-    /*    background-color: var(--gray-color);*/
-    /*}*/
 
     .about_me{
         width: 100vw;
@@ -493,7 +466,7 @@
 
     .project_info, .project_image{
         width: 60vw;
-        height: 40vh;
+        height: 30vh;
     }
 
     .mobile_image{
@@ -621,6 +594,14 @@
     }
 
     /*MAIN*/
+    .message, .resume_view{
+        top:0.6em;
+    }
+
+    .message{
+        left: 6em;
+    }
+
     .about_me{
         background-image: -webkit-linear-gradient(white 39%,var(--gray-color) 39% 40% ,var(--cyan-color) 40% 60%, var(--gray-color) 60% 61%,white 61%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
         background-image:    -moz-linear-gradient(white 39%,var(--gray-color) 39% 40% ,var(--cyan-color) 40% 60%, var(--gray-color) 60% 61%,white 61%); /* For Firefox (3.6 to 15) */
@@ -673,14 +654,10 @@
     }
 
     .project_info, .project_image{
-        width: 40vw;
+        width: 50vw;
         height: 40vh;
         margin-right: 15px;
     }
-
-    /*.info{*/
-    /*    padding: 5em;*/
-    /*}*/
 
     footer{
         padding-left: 4em;
@@ -696,7 +673,7 @@
     }
 
     .project_info, .project_image{
-        width: 300px;
+        width: 400px;
         height: 300px;
     }
 }
