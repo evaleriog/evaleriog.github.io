@@ -27,9 +27,9 @@
 
     $('#submit').click(function (e) {
         e.preventDefault();
-        let name;
-        let email;
-        let message;
+        var name;
+        var email;
+        var message;
 
         if($('#name').val() !== ""){
             name = $('#name').val();
@@ -94,9 +94,9 @@
     });
     // Section for ABOUT ME Carousel
     function showSlides(){
-        let slides = document.getElementsByClassName("slider");
+        var slides = document.getElementsByClassName("slider");
 
-        for(let i = 0; i < slides.length; i++){
+        for(var i = 0; i < slides.length; i++){
             slides[i].style.display = "none";
         }
 
