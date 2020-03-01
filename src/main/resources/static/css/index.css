@@ -225,6 +225,11 @@ iframe{
     background-color: var(--red-color);
 }
 
+.formError{
+    margin: 0px auto;
+    color: #E9DC5C;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -499,6 +504,10 @@ iframe{
 
 .adlister{
     background-image: url("../img/adlister_desktop.png");
+}
+
+.openhelp{
+    background-image: url("../img/openhelp_desktop.png");
 }
 /*MAIN*/
 
