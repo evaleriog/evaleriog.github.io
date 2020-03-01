@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -55,20 +55,22 @@
 <!--MAIN-->
 <main>
     <div class="message">
-        <form method="POST">
+        <form th:method="post" th:action="@{'/send-message'}" th:object="${email}">
             <h3>Contact Me</h3>
             <p>
                 <label for="name">Name: </label>
-                <input id="name" name="name" type="text">
+                <input id="name" type="text" th:field="*{name}">
+                <span th:text="${nameError}"></span>
             </p>
             <p>
                 <label for="email">Email: </label>
-                <input id="email" name="email" type="email">
+                <input id="email" type="email" th:field="*{email}">
             </p>
 
             <p>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <textarea id="message" rows="4" th:field="*{message}"></textarea>
+                <span th:text="${messageError}"></span>
             </p>
 
             <p>
