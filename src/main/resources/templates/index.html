@@ -60,17 +60,25 @@
             <p>
                 <label for="name">Name: </label>
                 <input id="name" type="text" th:field="*{name}">
-                <span th:text="${nameError}"></span>
+            </p>
+            <p>
+                <span class="formError" th:text="${nameError}"></span>
             </p>
             <p>
                 <label for="email">Email: </label>
                 <input id="email" type="email" th:field="*{email}">
             </p>
+            <p>
+                <span class="formError" th:text="${emailErrorForm}"></span>
+                <span class="formError" th:text="${emailError}"></span>
+            </p>
 
             <p>
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" th:field="*{message}"></textarea>
-                <span th:text="${messageError}"></span>
+            </p>
+            <p>
+                <span class="formError" th:text="${messageError}"></span>
             </p>
 
             <p>

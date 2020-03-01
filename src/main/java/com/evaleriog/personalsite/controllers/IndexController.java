@@ -29,9 +29,10 @@ public class IndexController {
 
         boolean checkName = email.getName() != null && !email.getName().equals("");
         boolean checkEmail = (email.getEmail() != null) && !(email.getEmail().equals(""));
+        boolean checkEmailForm = email.checkEmail();
         boolean checkMessage = email.getMessage() != null && !email.getMessage().equals("");
 
-        if(checkName && checkEmail && checkMessage){
+        if(checkName && checkEmail && checkMessage && checkEmailForm){
             emailService.sendEmail(email.getEmail(), email.getName(), email.getMessage());
         }
 
@@ -41,6 +42,14 @@ public class IndexController {
 
         if(!checkMessage) {
             model.addAttribute("messageError", "Message can not be empty");
+        }
+
+        if(!checkEmail){
+            model.addAttribute("emailError", "Email can not be empty");
+        }
+
+        if(!checkEmailForm){
+            model.addAttribute("emailErrorForm", "Email format was not correct");
         }
 
         return "index";

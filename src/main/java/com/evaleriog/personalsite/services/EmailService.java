@@ -21,7 +21,7 @@ public class EmailService {
         msg.setFrom(from);
         msg.setTo(to);
         msg.setSubject("Message from: " + name);
-        msg.setText(message);
+        msg.setText("Email: " + from + " \n" + message);
         try{
             this.emailSender.send(msg);
         }catch (MailException ex){
