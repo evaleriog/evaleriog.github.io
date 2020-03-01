@@ -25,40 +25,6 @@
         $(this).slideToggle(500);
     });
 
-    $('#submit').click(function (e) {
-        e.preventDefault();
-        var name;
-        var email;
-        var message;
-
-        if($('#name').val() !== ""){
-            name = $('#name').val();
-        }else{
-            alert("Name cannot be empty");
-        }
-
-        if($('#email').val() !== ""){
-            email = $('#email').val();
-        }else {
-            alert("Email cannot be empty");
-        }
-
-        if($('#message').val() !== ""){
-            message = $('#message').val();
-        }else {
-            alert("Message cannot be empty");
-        }
-
-        alert(name + " " + email + " " + message);
-
-        $('#name').val("");
-        $('#email').val("");
-        $('#message').val("");
-
-        $('.message').hide();
-
-    });
-
     $('#cancel').click(function (e) {
         e.preventDefault();
 
