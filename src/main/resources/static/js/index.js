@@ -76,7 +76,4 @@
         setTimeout(showSlides, 5000);
     }
 
-
-
-
 })(); //End of IIFE
